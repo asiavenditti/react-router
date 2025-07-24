@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 function Header() {
@@ -7,13 +8,13 @@ function Header() {
             <div className="container-fluid justify-content-center">
                 <ul className="navbar-nav flex-row gap-4">
                     <li className="nav-item">
-                        <a className="nav-link text-light custom-link" href="#">Home</a>
+                        <NavLink className="nav-link text-light custom-link" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light custom-link" href="#">Product</a>
+                        <NavLink className="nav-link text-light custom-link" to="/products">Product</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light custom-link" href="#">About Us</a>
+                        <NavLink className="nav-link text-light custom-link" to="/aboutus">About Us</NavLink>
                     </li>
                 </ul>
             </div>
