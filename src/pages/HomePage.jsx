@@ -8,8 +8,6 @@ export default function HomePage() {
                 unde iusto eligendi quidem temporibus quasi in. Molestiae deleniti eaque dolores voluptatum distinctio, amet
                 recusandae laudantium vel ducimus culpa dolor commodi, aliquid ea veniam earum perspiciatis laborum quos
                 deserunt temporibus libero nihil numquam necessitatibus!
-
-
             </p>
             <button className="btn btn-primary px-4 py-2">
                 Scopri di più
