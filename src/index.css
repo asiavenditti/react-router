@@ -1,1 +1,7 @@
-@import 'bootstrap'
+@import 'bootstrap';
+
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
