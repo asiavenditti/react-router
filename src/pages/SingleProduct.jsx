@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
+
 
 export default function SingleProduct() {
 
@@ -19,8 +20,26 @@ export default function SingleProduct() {
 
     }, [id])
 
+    const navigate = useNavigate()
+
+    function next() {
+        const nextPost = Number(id) + 1
+        navigate(`/product/${nextPost}`)
+    }
+
+    function pre() {
+        const previousPost = Number(id) - 1
+        navigate(`/product/${previousPost}`)
+    }
     return (
-        <div className="container my-5">
+
+        <div className="container my-5 b">
+            <button onClick={pre}>
+                Precedente
+            </button >
+            <button onClick={next}>
+                Successivo
+            </button >
             <div className="card shadow-sm border-0 mx-auto" style={{ maxWidth: "600px" }}>
                 <div className="text-center p-4" style={{ height: "300px" }}>
                     <img
